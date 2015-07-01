@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\cpp\BlackScholes.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpp\complex.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpp\fft_impl.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpp\FFTOptionPricing.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cuda\kernels_wrapper.h">
+      <Filter>cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpp\BlackScholes.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpp\complex.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpp\fft_impl.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpp\FFTOptionPricing.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpp\fft_kernel.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{84af0712-d4e5-46c8-b708-5d70389873af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{935c0803-8e75-49c0-b6d7-1adab254c9b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{5cdb292d-a278-4c61-bfc2-27e515ae67c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\src\cuda\fft_gpu_kernels.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\cuda\cuDblComplex.cuh">
+      <Filter>cuda</Filter>
+    </None>
+  </ItemGroup>
+</Project>
